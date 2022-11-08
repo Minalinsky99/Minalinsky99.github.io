@@ -1,0 +1,116 @@
+.container {
+   width: auto;
+   height: auto;
+   border: 1px solid black;
+   margin: 10px auto;
+   padding: 5px;
+   box-sizing: border-box;
+   display: grid;
+   grid-template-areas: "header header"
+                        "aside nav"
+                        "aside main"
+                        "footer1 footer2";
+   grid-template-columns: 20% 80%;
+   grid-template-rows: auto 30px auto 80px;
+   background-color: pink;
+}
+
+html {
+   margin: 0;
+   padding: 0;
+   font-family: 'Times New Roman', Times, serif;
+   color: black;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+header {
+   grid-area: header;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 3px;
+}
+
+aside {
+   background-color: green;
+   grid-area: aside;
+   display: flex;
+   margin-right: 3px;
+   margin-bottom: 3px;
+}
+
+.sidebar {
+   display: flex;
+   margin: 3px;
+   list-style: none;
+   flex-direction: column;
+   padding-inline-start: 2px;
+   padding-inline-end: 2px;
+}
+
+nav {
+   background-color: #73a5f5;
+   grid-area: nav;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 4px;
+}
+
+.navigation {
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   justify-items: center;
+   list-style: none;
+}
+
+.navigation a {
+   float: left;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.navigation a:hover {
+   background-color: red;
+   color: white;
+   padding: 2px;
+}
+
+.navigation a:active {
+   background-color: #73a5f5;
+   color: yellow;
+}
+
+
+main {
+   background-color: aquamarine;
+   box-sizing: border-box;
+   grid-area: main;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 4px;
+}
+
+.footer1 {
+   background-color: #73a5f5;
+   grid-area: footer1;
+   display: flex;
+   flex-direction: column;
+   font-size: 12px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bolder;
+   color: yellow;
+}
+
+footer {
+   background-color: #73a5f5;
+   grid-area: footer2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
